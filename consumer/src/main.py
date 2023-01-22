@@ -19,4 +19,4 @@ window_size = st.number_input("Window Size", min_value=10, max_value=100)
 if connect:
     asyncio.run(consumer(dict(zip(selected_channels, columns)), selected_channels, window_size, status))
 else:
-    status.subheader(f"Disconnected.")
+    status.subheader("Disconnected.")
